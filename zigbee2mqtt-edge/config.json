@@ -70,5 +70,5 @@
       "rtscts": "bool?"
     }
   },
-  "image": "lawrencedudley/z2m-testing:3"
+  "image": "lawrencedudley/z2m-testing"
 }
