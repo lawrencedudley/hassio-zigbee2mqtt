@@ -48,4 +48,6 @@ COPY --from=dependencies_and_build /app/package.json /app/LICENSE /app/index.js 
 
 ENV NODE_ENV production
 
+ADD dist /app/node_modules/zigbee-herdsman/dist
+
 ENTRYPOINT [ "/sbin/tini", "--", "/docker-entrypoint.sh"]

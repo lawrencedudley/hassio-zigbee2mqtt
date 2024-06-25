@@ -95,5 +95,6 @@ if bashio::config.is_empty 'mqtt' && bashio::var.has_value "$(bashio::services '
 fi
 
 bashio::log.info "Starting Zigbee2MQTT..."
-cd /app
+bashio::log.info "Version: 2"
+
 exec node index.js
